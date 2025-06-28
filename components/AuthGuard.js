@@ -1,4 +1,4 @@
+// Simplified version - just renders children without any auth check
 export default function AuthGuard({ children }) {
-  // Remove authentication check
   return children;
 }
