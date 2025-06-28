@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useAuth } from '../context/AuthContext';
 
 export default function Sidebar({ items, activeTab, isOpen, onToggle }) {
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
 
   return (
     <div className={`bg-[#2e2b55] text-white ${isOpen ? 'w-64' : 'w-20'} transition-all duration-300`}>
